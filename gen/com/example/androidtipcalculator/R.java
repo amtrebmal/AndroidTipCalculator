@@ -26,16 +26,14 @@ public final class R {
     public static final class id {
         public static final int TipAmount=0x7f080003;
         public static final int TipTitle=0x7f080002;
-        public static final int action_settings=0x7f080007;
+        public static final int action_settings=0x7f080006;
         public static final int billText=0x7f080000;
-        public static final int editText1=0x7f080006;
         public static final int fifperc=0x7f080004;
         public static final int tenperc=0x7f080001;
         public static final int twenperc=0x7f080005;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int activity_result=0x7f030001;
     }
     public static final class menu {
         public static final int main=0x7f070000;
