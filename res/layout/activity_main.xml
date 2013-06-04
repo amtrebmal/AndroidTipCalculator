@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+
+
+    <EditText
+        android:id="@+id/billText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="84dp"
+        android:ems="15"
+        android:hint="@string/total_bill" 
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/tenperc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/billText"
+        android:layout_below="@+id/billText"
+        android:layout_marginTop="39dp"
+        android:onClick="calculateTip"
+        android:text="@string/ten_percent" />
+    
+   	<TextView
+        android:id="@+id/TipTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="69dp"
+        android:layout_marginLeft="88dp"
+        android:text="@string/tip_is" />
+   	
+   	   	<EditText
+        android:id="@+id/TipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="69dp"
+        android:layout_marginLeft="68dp"
+        android:text="" />
+
+		<Button
+            android:id="@+id/fifperc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tenperc"
+            android:layout_alignBottom="@+id/tenperc"
+            android:onClick="calculateTip"
+            android:layout_centerHorizontal="true"
+            android:text="@string/fifteen_percent" />
+
+        <Button
+            android:id="@+id/twenperc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tenperc"
+            android:layout_alignBottom="@+id/tenperc"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/fifperc"
+            android:onClick="calculateTip"
+            android:text="@string/twenty_percent" />
+
+
+
+</RelativeLayout>
